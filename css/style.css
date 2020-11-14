@@ -1,0 +1,151 @@
+:root {
+
+    /* Primary Colors */
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* Neutral colors */
+
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--VeryLightGray);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.presentation {
+    text-align: center;
+    width: 90%;
+    margin: 60px auto;
+}
+
+.presentation__title-first {
+    font-weight: 400;
+    margin: 0;
+}
+
+.presentation__title-second {
+    font-weight: 600;
+    margin: 0;
+}
+
+.presentation__description {
+    font-weight: 200;
+    color: var(--GrayishBlue);
+}
+
+.card {
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    -webkit-box-shadow: 3px 2px 17px 0px rgba(50, 50, 50, 0.33);
+    -moz-box-shadow:    3px 2px 17px 0px rgba(50, 50, 50, 0.33);
+    box-shadow:         3px 2px 17px 0px rgba(50, 50, 50, 0.33);
+}
+
+.card__copy-title {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card__copy-description {
+    color: var(--GrayishBlue);
+    font-weight: 200;
+}
+
+.card__icon {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card-supervisor {
+    border-top: 5px solid var(--Cyan);
+}
+
+.card-teamBuilder {
+    border-top: 5px solid var(--Red);
+}
+.card-karma {
+    border-top: 5px solid var(--Orange);
+}
+.card-calculator {
+    border-top: 5px solid var(--Blue);
+}
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 769px){
+
+    .container {
+        width: 80%;
+    }
+
+    .presentation {
+        width: 50%;
+    }
+
+    .presentation__title-first {
+        font-size: 3em;
+    }
+
+    .presentation__title-second {
+        font-size: 3.1em;
+    }
+
+    .presentation__description {
+        font-size: 1.3em;
+    }
+
+    .cards {
+        display: flex;
+    }
+
+    .cards__separator {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-supervisor {
+        margin-right: 30px;
+    }
+    
+    .card-teamBuilder {
+        margin-bottom: 30px;
+    }
+    .card-calculator {
+        margin-left: 30px;
+    }
+
+}
